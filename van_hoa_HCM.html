@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="vi">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+         Không Gian Số Văn Hóa Hồ Chí Minh - Trạm Y Tế Phường Tân Thới Hiệp
+      </title>
+      <!-- Tailwind CSS CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Font Awesome Icons -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+      <!-- Google Fonts Inter -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {
+                     brand: {
+                        red: "#B91C1C" /* Red 700 */,
+                        darkred: "#991B1B" /* Red 800 */,
+                        gold: "#D97706" /* Amber 600 */,
+                        lightgold: "#FBBF24" /* Amber 400 */,
+                        cream: "#FFFBEB" /* Amber 50 */,
+                     },
+                  },
+                  fontFamily: {
+                     sans: ["Inter", "sans-serif"],
+                  },
+               },
+            },
+         };
+      </script>
+      <style>
+         /* Smooth scrolling for anchor links */
+         html {
+            scroll-behavior: smooth;
+         }
+         /* Custom scrollbar styling */
+         ::-webkit-scrollbar {
+            width: 8px;
+         }
+         ::-webkit-scrollbar-track {
+            background: #f3f4f6;
+         }
+         ::-webkit-scrollbar-thumb {
+            background: #b91c1c;
+            border-radius: 4px;
+         }
+         ::-webkit-scrollbar-thumb:hover {
+            background: #991b1b;
+         }
+      </style>
+   </head>
+   <body
+      class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-red selection:text-white flex flex-col min-h-screen"
+   >
+      <!-- Top Announcement Bar -->
+      <div
+         class="bg-brand-darkred text-amber-200 text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-amber-500/20 flex justify-between items-center max-w-full overflow-hidden"
+      >
+         <div class="container mx-auto flex justify-between items-center">
+            <span class="truncate"
+               ><i class="fa-solid fa-star text-amber-400 mr-1.5"></i> Chào mừng
+               đến với Không gian số Văn hóa Hồ Chí Minh - Trạm Y tế Phường Tân
+               Thới Hiệp</span
+            >
+            <span class="hidden md:inline-block text-slate-200 text-xs"
+               ><i class="fa-solid fa-location-dot mr-1 text-amber-400"></i> Số
+               495 Đường Dương Thị Mười, Phường Tân Thới Hiệp</span
+            >
+         </div>
+      </div>
+
+      <!-- Header & Hero Section -->
+      <header
+         class="relative bg-gradient-to-br from-brand-red via-brand-darkred to-red-950 text-white overflow-hidden shadow-xl"
+      >
+         <!-- Dong Son Bronze Drum Watermark Background -->
+         <div
+            class="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none overflow-hidden"
+         >
+            <svg
+               class="w-[800px] h-[800px] text-amber-300 animate-spin-slow"
+               viewBox="0 0 200 200"
+               fill="currentColor"
+            >
+               <!-- Concentric Drum Rings & Star Pattern -->
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+               />
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="85"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-dasharray="2 2"
+               />
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="70"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+               />
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="50"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+               />
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="30"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+               />
+               <!-- 12-Pointed Sun Star Center -->
+               <polygon
+                  points="100,75 104,92 118,82 108,96 125,100 108,104 118,118 104,108 100,125 96,108 82,118 92,104 75,100 92,96 82,82 96,92"
+               />
+               <!-- Birds / Geometric Motifs -->
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="60"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-dasharray="6 4"
+               />
+               <circle
+                  cx="100"
+                  cy="100"
+                  r="40"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-dasharray="4 4"
+               />
+            </svg>
+         </div>
+
+         <div class="container mx-auto px-4 py-12 md:py-16 relative z-10">
+            <div
+               class="flex flex-col items-center text-center max-w-4xl mx-auto"
+            >
+               <!-- Badge / Logo Area -->
+               <div
+                  class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs md:text-sm font-semibold mb-6 backdrop-blur-sm shadow-inner"
+               >
+                  <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                  <span>TRẠM Y TẾ PHUỜNG TÂN THỚI HIỆP</span>
+               </div>
+
+               <!-- Main Titles -->
+               <h1
+                  class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight"
+               >
+                  KHÔNG GIAN SỐ <br />
+                  VĂN HÓA HỒ CHÍ MINH
+               </h1>
+
+               <p
+                  class="text-lg sm:text-xl font-medium text-amber-200/90 mb-8 max-w-2xl"
+               >
+                  Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh
+                  trong sự nghiệp chăm sóc và bảo vệ sức khỏe nhân dân.
+               </p>
+
+               <!-- Featured Quote Card -->
+               <div
+                  class="w-full max-w-3xl bg-black/25 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-amber-400/30 shadow-2xl relative"
+               >
+                  <i
+                     class="fa-solid fa-quote-left text-3xl sm:text-4xl text-amber-400/40 absolute top-4 left-4"
+                  ></i>
+                  <p
+                     class="text-base sm:text-lg md:text-xl font-serif italic text-amber-100 relative z-10 px-6"
+                     style="
+                        font-family:
+                           Cambria, &quot;Times New Roman&quot;, Times, serif;
+                     "
+                  >
+                     "Người thầy thuốc giỏi đồng thời phải là như mẹ hiền... Cán
+                     bộ y tế cần phải thương yêu, chăm sóc người bệnh như anh em
+                     ruột thịt của mình."
+                  </p>
+                  <div
+                     class="mt-4 pt-3 border-t border-amber-400/20 text-xs sm:text-sm font-semibold text-amber-300 uppercase tracking-wider"
+                  >
+                     — Trích Thư Bác Hồ gửi Hội nghị Cán bộ Y tế (27/02/1955)
+                  </div>
+               </div>
+
+               <!-- Action Buttons -->
+               <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                  <a
+                     href="#tu-lieu"
+                     class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-red-950 font-bold transition-all duration-200 shadow-lg hover:shadow-amber-500/30 flex items-center gap-2"
+                  >
+                     <i class="fa-solid fa-book-open"></i> Khám phá Thư viện số
+                  </a>
+                  <a
+                     href="#loi-bac-day"
+                     class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold backdrop-blur-sm border border-white/20 transition-all duration-200 flex items-center gap-2"
+                  >
+                     <i class="fa-solid fa-heart-pulse"></i> Lời Bác Dạy Ngành Y
+                  </a>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- Sticky Navigation -->
+      <nav
+         class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-md"
+      >
+         <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+               <!-- Brand logo / text -->
+               <a
+                  href="#"
+                  class="flex items-center gap-2 font-bold text-slate-800 hover:text-brand-red transition-colors"
+               >
+                  <span class="hidden sm:inline-block"
+                     >Trạm Y Tế Tân Thới Hiệp</span
+                  >
+                  <span class="sm:hidden">TYT Tân Thới Hiệp</span>
+               </a>
+
+               <!-- Desktop Nav Items (No Icons) -->
+               <div class="hidden md:flex items-center space-x-1 lg:space-x-4">
+                  <a
+                     href="#loi-bac-day"
+                     class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-red hover:bg-red-50 transition-colors"
+                  >
+                     Lời Bác Dạy
+                  </a>
+                  <a
+                     href="#tu-lieu"
+                     class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-red hover:bg-red-50 transition-colors"
+                  >
+                     Tư Liệu Số
+                  </a>
+                  <a
+                     href="#trien-lam-anh"
+                     class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-red hover:bg-red-50 transition-colors"
+                  >
+                     Triển Lãm Ảnh
+                  </a>
+                  <a
+                     href="#hoat-dong-tram"
+                     class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-brand-red hover:bg-red-50 transition-colors"
+                  >
+                     Hoạt Động Trạm
+                  </a>
+               </div>
+
+               <!-- Mobile Navigation Links (Text without icons) -->
+               <div
+                  class="flex md:hidden items-center space-x-2 text-xs font-semibold"
+               >
+                  <a
+                     href="#loi-bac-day"
+                     class="p-1.5 text-slate-700 hover:text-brand-red"
+                     >Lời Dạy</a
+                  >
+                  <a
+                     href="#tu-lieu"
+                     class="p-1.5 text-slate-700 hover:text-brand-red"
+                     >Tư Liệu</a
+                  >
+                  <a
+                     href="#trien-lam-anh"
+                     class="p-1.5 text-slate-700 hover:text-brand-red"
+                     >Triển Lãm</a
+                  >
+                  <a
+                     href="#hoat-dong-tram"
+                     class="p-1.5 text-slate-700 hover:text-brand-red"
+                     >Hoạt Động</a
+                  >
+                  <a
+                     href="#tra-cuu-qr"
+                     class="p-1.5 text-slate-700 hover:text-brand-red"
+                     >Mã QR</a
+                  >
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Main Content Container -->
+      <main class="flex-grow container mx-auto px-4 py-8 space-y-16">
+         <!-- SECTION 1: Lời Bác Dạy Ngành Y -->
+         <section id="loi-bac-day" class="scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+               <span
+                  class="text-brand-red font-bold text-sm tracking-widest uppercase bg-red-100 px-3 py-1 rounded-full"
+                  >Tư Tưởng Cốt Lõi</span
+               >
+               <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-3">
+                  3 Lời Dạy Cốt Lõi Của Bác Với Ngành Y Tế
+               </h2>
+               <div
+                  class="w-16 h-1 bg-brand-gold mx-auto mt-3 rounded-full"
+               ></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+               <!-- Card 1 -->
+               <div
+                  class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+               >
+                  <div>
+                     <div
+                        class="w-14 h-14 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-brand-red group-hover:text-white transition-colors"
+                     >
+                        <i class="fa-solid fa-people-group"></i>
+                     </div>
+                     <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        1. Thật Thà Đoàn Kết
+                     </h3>
+                     <p class="text-slate-600 text-sm leading-relaxed">
+                        Đoàn kết giữa cán bộ cũ và cán bộ mới. Đoàn kết giữa tất
+                        cả những người trong ngành y tế, từ thầy thuốc, y sĩ,
+                        điều dưỡng cho đến nhân viên phục vụ.
+                     </p>
+                  </div>
+                  <div
+                     class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-brand-red"
+                  >
+                     <span>HỢP TÁC & THỐNG NHẤT</span>
+                     <i class="fa-solid fa-arrow-right ml-auto"></i>
+                  </div>
+               </div>
+
+               <!-- Card 2 -->
+               <div
+                  class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+               >
+                  <div>
+                     <div
+                        class="w-14 h-14 rounded-2xl bg-amber-100 text-brand-gold flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-brand-gold group-hover:text-white transition-colors"
+                     >
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                     </div>
+                     <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        2. Thương Yêu Người Bệnh
+                     </h3>
+                     <p class="text-slate-600 text-sm leading-relaxed">
+                        Người bệnh giao tin cậy tính mạng của họ cho ta. Cán bộ
+                        y tế cần phải thương yêu, chăm sóc người bệnh như anh em
+                        ruột thịt của mình, coi họ đau đớn như mình đau đớn.
+                     </p>
+                  </div>
+                  <div
+                     class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-brand-gold"
+                  >
+                     <span>LƯƠNG Y NHƯ TỪ MẪU</span>
+                     <i class="fa-solid fa-arrow-right ml-auto"></i>
+                  </div>
+               </div>
+
+               <!-- Card 3 -->
+               <div
+                  class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+               >
+                  <div>
+                     <div
+                        class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-colors"
+                     >
+                        <i class="fa-solid fa-vial-virus"></i>
+                     </div>
+                     <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        3. Xây Dựng Y Học Nước Nhà
+                     </h3>
+                     <p class="text-slate-600 text-sm leading-relaxed">
+                        Xây dựng một nền y học dựa trên nguyên tắc: Khoa học,
+                        Dân tộc và Đại chúng. Tích cực kết hợp Đông y và Tây y
+                        để phục vụ nhân dân hiệu quả nhất.
+                     </p>
+                  </div>
+                  <div
+                     class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-emerald-600"
+                  >
+                     <span>ĐỔI MỚI & PHÁT TRIỂN</span>
+                     <i class="fa-solid fa-arrow-right ml-auto"></i>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- SECTION 2: Kho Tư Liệu Số -->
+         <section id="tu-lieu" class="scroll-mt-24">
+            <div
+               class="bg-white rounded-3xl p-6 md:p-10 border border-slate-200/80 shadow-lg"
+            >
+               <div
+                  class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-slate-100"
+               >
+                  <div>
+                     <span
+                        class="text-brand-red font-bold text-sm tracking-widest uppercase bg-red-100 px-3 py-1 rounded-full"
+                        >KHO DỮ LIỆU</span
+                     >
+                     <h2
+                        class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2"
+                     >
+                        Thư Viện & Khai Thác Tư Liệu Số
+                     </h2>
+                  </div>
+                  <p class="text-slate-500 text-sm mt-2 md:mt-0 max-w-md">
+                     Tra cứu các văn kiện, sách nói, tài liệu chuyên đề và tác
+                     phẩm của Chủ tịch Hồ Chí Minh dễ dàng trên mọi thiết bị.
+                  </p>
+               </div>
+
+               <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+               >
+                  <!-- Resource Item 1 -->
+                  <div
+                     class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70 hover:bg-red-50/50 hover:border-red-200 transition-all flex flex-col justify-between"
+                  >
+                     <div>
+                        <div class="text-brand-red text-2xl mb-3">
+                           <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-2">
+                           Thư Bác Hồ Gửi Cán Bộ Y Tế
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                           Toàn văn bức thư lịch sử ngày 27/02/1955 đúc kết kim
+                           chỉ nam cho ngành y tế Việt Nam.
+                        </p>
+                     </div>
+                     <a
+                        href="https://baotanghochiminh.vn/tam-nguyen-ho-chi-minh-gui-gam-nganh-y-te-qua-buc-thu-ngay-27-2-1955.htm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-brand-red hover:underline"
+                     >
+                        Đọc văn bản
+                        <i
+                           class="fa-solid fa-arrow-up-right-from-square text-[10px]"
+                        ></i>
+                     </a>
+                  </div>
+
+                  <!-- Resource Item 2 -->
+                  <div
+                     class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70 hover:bg-amber-50/50 hover:border-amber-200 transition-all flex flex-col justify-between"
+                  >
+                     <div>
+                        <div class="text-brand-gold text-2xl mb-3">
+                           <i class="fa-solid fa-book-bookmark"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-2">
+                           Tác Phẩm "Đường Kách Mệnh"
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                           Bộ tài liệu số hóa tác phẩm kinh điển về rèn luyện
+                           đạo đức cách mạng và tư tưởng Hồ Chí Minh.
+                        </p>
+                     </div>
+                     <a
+                        href="https://hochiminh.vn/book/tac-pham-cua-ho-chi-minh/tac-pham-cua-ho-chi-minh/duong-cach-menh-440"
+                        target="_blank"
+                        class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-brand-gold hover:underline"
+                     >
+                        Tra cứu sách số
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                     </a>
+                  </div>
+
+                  <!-- Resource Item 3 -->
+                  <div
+                     class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70 hover:bg-blue-50/50 hover:border-blue-200 transition-all flex flex-col justify-between"
+                  >
+                     <div>
+                        <div class="text-blue-600 text-2xl mb-3">
+                           <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-2">
+                           Phim Tư Liệu Y Đức
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                           Tuyển tập các hình ảnh, thước phim tư liệu về Bác Hồ
+                           thăm các bệnh viện, trạm y tế.
+                        </p>
+                     </div>
+                     <a
+                        href="#"
+                        onclick="
+                           alert(
+                              'Chức năng phát video tư liệu đang hoàn thiện!',
+                           );
+                           return false;
+                        "
+                        class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:underline"
+                     >
+                        Xem phim tư liệu
+                        <i class="fa-solid fa-play text-[10px]"></i>
+                     </a>
+                  </div>
+
+                  <!-- Resource Item 4 -->
+                  <div
+                     class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70 hover:bg-purple-50/50 hover:border-purple-200 transition-all flex flex-col justify-between"
+                  >
+                     <div>
+                        <div class="text-purple-600 text-2xl mb-3">
+                           <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-2">
+                           Audio Sách Nói Lời Bác
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                           Nghe các câu chuyện kể về tư tưởng, phong cách làm
+                           việc giản dị, sâu sắc của Bác.
+                        </p>
+                     </div>
+                     <a
+                        href="https://youtu.be/KfgRm570fxk?si=0nydd0RB_lS7htBa"
+                        target="_blank"
+                        class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:underline"
+                     >
+                        Nghe sách nói
+                        <i class="fa-solid fa-volume-high text-[10px]"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- SECTION 3: Triển Lãm Ảnh Số -->
+         <section id="trien-lam-anh" class="scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+               <span
+                  class="text-brand-red font-bold text-sm tracking-widest uppercase bg-red-100 px-3 py-1 rounded-full"
+                  >TRIỂN LÃM ẢNH</span
+               >
+               <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-3">
+                  Hình Ảnh Bác Hồ Với Ngành Y Tế
+               </h2>
+               <p class="text-slate-500 text-sm mt-2">
+                  Những khoảnh khắc lịch sử vô giá về sự quan tâm của Chủ tịch
+                  Hồ Chí Minh đối với công tác chăm sóc sức khỏe nhân dân.
+               </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+               <!-- Photo 1: Tư liệu lịch sử -->
+               <div
+                  class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all"
+               >
+                  <div
+                     class="relative overflow-hidden aspect-video bg-slate-100"
+                  >
+                     <img
+                        src="./bac_Ho_voi_BT_Pham_Ngoc_Thach.png"
+                        alt="Bác Hồ thăm cơ sở y tế"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     />
+                     <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"
+                     ></div>
+                     <span
+                        class="absolute bottom-3 left-3 text-xs text-amber-300 font-semibold bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md"
+                     >
+                        Tư liệu lịch sử
+                     </span>
+                  </div>
+                  <div class="p-5">
+                     <h4 class="font-bold text-slate-900 text-base mb-2">
+                        Chủ tịch Hồ Chí Minh với Bộ trưởng Bộ Y tế Phạm Ngọc
+                        Thạch, Giáo sư, bác sĩ Trần Hữu Tước.
+                     </h4>
+                     <p class="text-xs text-slate-600 leading-relaxed">
+                        (Ảnh: Tư liệu/TTXVN)
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Photo 2: Tinh thần lương y -->
+               <div
+                  class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all"
+               >
+                  <div
+                     class="relative overflow-hidden aspect-video bg-slate-100"
+                  >
+                     <img
+                        src="./bac_Ho_tham_BV_ND.png"
+                        alt="Chăm sóc bệnh nhân"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        onerror="
+                           this.src =
+                              'https://placehold.co/800x450/D97706/FFF?text=Tinh+Than+Luong+Y+Nhu+Tu+Mau'
+                        "
+                     />
+                     <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"
+                     ></div>
+                     <span
+                        class="absolute bottom-3 left-3 text-xs text-amber-300 font-semibold bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md"
+                     >
+                        Tư liệu lịch sử
+                     </span>
+                  </div>
+                  <div class="p-5">
+                     <h4 class="font-bold text-slate-900 text-base mb-2">
+                        Chủ tịch Hồ Chí Minh thăm Bệnh viện thành phố Nam Định
+                        (ngày 22/5/1963).
+                     </h4>
+                     <p class="text-xs text-slate-600 leading-relaxed">
+                        (Ảnh: Tư liệu/TTXVN)
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Photo 3: Thực tiễn cơ sở -->
+               <div
+                  class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all"
+               >
+                  <div
+                     class="relative overflow-hidden aspect-video bg-slate-100"
+                  >
+                     <img
+                        src="./bac_Ho_voi_BS_THT.png"
+                        alt="Y tế tuyến cơ sở"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     />
+                     <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"
+                     ></div>
+                     <span
+                        class="absolute bottom-3 left-3 text-xs text-amber-300 font-semibold bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md"
+                     >
+                        Tư liệu lịch sử
+                     </span>
+                  </div>
+                  <div class="p-5">
+                     <h4 class="font-bold text-slate-900 text-base mb-2">
+                        Bác Hồ nói chuyện thân mật với giáo sư, bác sĩ Trần Hữu
+                        Tước (bên trái) và các trí thức ngành Y (tháng 3/1964).
+                     </h4>
+                     <p class="text-xs text-slate-600 leading-relaxed">
+                        (Ảnh: Tư liệu/TTXVN)
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Photo 4: Thực tiễn cơ sở -->
+
+               <div
+                  class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all"
+               >
+                  <div
+                     class="relative overflow-hidden aspect-video bg-slate-100"
+                  >
+                     <img
+                        src="./BX_VD.png"
+                        alt="Y tế tuyến cơ sở"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     />
+                     <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"
+                     ></div>
+                     <span
+                        class="absolute bottom-3 left-3 text-xs text-amber-300 font-semibold bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md"
+                     >
+                        Tư liệu lịch sử
+                     </span>
+                  </div>
+                  <div class="p-5">
+                     <h4 class="font-bold text-slate-900 text-base mb-2">
+                        Thăm Bệnh xá Vân Đình (Hà Tây cũ) ngày 20/4/1963
+                     </h4>
+                     <p class="text-xs text-slate-600 leading-relaxed">
+                        (Ảnh: Tư liệu/TTXVN)
+                     </p>
+                  </div>
+               </div>
+               <!-- Photo 5: Thực tiễn cơ sở -->
+
+               <div
+                  class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all"
+               >
+                  <div
+                     class="relative overflow-hidden aspect-video bg-slate-100"
+                  >
+                     <img
+                        src="./BV_Mat_TW.png"
+                        alt="Y tế tuyến cơ sở"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     />
+                     <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"
+                     ></div>
+                     <span
+                        class="absolute bottom-3 left-3 text-xs text-amber-300 font-semibold bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md"
+                     >
+                        Tư liệu lịch sử
+                     </span>
+                  </div>
+                  <div class="p-5">
+                     <h4 class="font-bold text-slate-900 text-base mb-2">
+                        Chủ tịch Hồ Chí Minh thăm Viện Mắt Trung ương.
+                     </h4>
+                     <p class="text-xs text-slate-600 leading-relaxed">
+                        (Ảnh: Tư liệu/TTXVN)
+                     </p>
+                  </div>
+               </div>
+               <!-- Photo 5: Thực tiễn cơ sở -->
+
+               <div
+                  class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all"
+               >
+                  <div
+                     class="relative overflow-hidden aspect-video bg-slate-100"
+                  >
+                     <img
+                        src="./BS_Quan_Y.png"
+                        alt="Y tế tuyến cơ sở"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     />
+                     <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"
+                     ></div>
+                     <span
+                        class="absolute bottom-3 left-3 text-xs text-amber-300 font-semibold bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-md"
+                     >
+                        Tư liệu lịch sử
+                     </span>
+                  </div>
+                  <div class="p-5">
+                     <h4 class="font-bold text-slate-900 text-base mb-2">
+                        Bác Hồ với các bác sĩ ngành Quân y (năm 1954).
+                     </h4>
+                     <p class="text-xs text-slate-600 leading-relaxed">
+                        (Ảnh: Tư liệu/TTXVN)
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- SECTION 4: Hoạt Động Thực Tế Tại Trạm -->
+         <section id="hoat-dong-tram" class="scroll-mt-24">
+            <div
+               class="bg-gradient-to-r from-red-900 to-brand-red text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden"
+            >
+               <div class="relative z-10">
+                  <div class="max-w-2xl mb-8">
+                     <span
+                        class="bg-amber-400/20 text-amber-300 font-bold text-xs uppercase px-3 py-1 rounded-full border border-amber-400/30"
+                        >HỌC TẬP VÀ LÀM THEO</span
+                     >
+                     <h2 class="text-2xl sm:text-3xl font-bold mt-3">
+                        Phong Trào Thực Hiện Tại Trạm Y Tế Phường Tân Thới Hiệp
+                     </h2>
+                     <p class="text-red-100 text-sm mt-2">
+                        Đưa tư tưởng Hồ Chí Minh vào công tác chuyên môn hằng
+                        ngày tại đơn vị.
+                     </p>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                     <div
+                        class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/15"
+                     >
+                        <div
+                           class="text-amber-400 text-xl font-bold mb-2 flex items-center gap-2"
+                        >
+                           <i class="fa-solid fa-clock-rotate-left"></i> Đổi Mới
+                           Tác Phong
+                        </div>
+                        <p class="text-xs text-red-50 leading-relaxed">
+                           Đón tiếp chu đáo, hướng dẫn tận tình, giảm thiểu thời
+                           gian chờ đợi của người dân khi đến khám chữa bệnh và
+                           tiêm chủng.
+                        </p>
+                     </div>
+
+                     <div
+                        class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/15"
+                     >
+                        <div
+                           class="text-amber-400 text-xl font-bold mb-2 flex items-center gap-2"
+                        >
+                           <i class="fa-solid fa-laptop-medical"></i> Chuyển Đổi
+                           Số Y Tế
+                        </div>
+                        <p class="text-xs text-red-50 leading-relaxed">
+                           Số hóa hồ sơ sức khỏe toàn dân, triển khai khám chữa
+                           bệnh BHYT bằng Căn cước công dân gắn chip và ứng dụng
+                           VNeID.
+                        </p>
+                     </div>
+
+                     <div
+                        class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/15"
+                     >
+                        <div
+                           class="text-amber-400 text-xl font-bold mb-2 flex items-center gap-2"
+                        >
+                           <i class="fa-solid fa-leaf"></i> Y Tế Vì Cộng Đồng
+                        </div>
+                        <p class="text-xs text-red-50 leading-relaxed">
+                           Tích cực truyền thông phòng chống dịch bệnh, chăm sóc
+                           sức khỏe người cao tuổi và các đối tượng chính sách
+                           trên địa bàn phường.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- SECTION 5: Mã QR & Tra Cứu Nhanh -->
+         <!-- <section id="tra-cuu-qr" class="scroll-mt-24">
+            <div
+               class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-lg flex flex-col md:flex-row items-center gap-8"
+            >
+               <div class="w-full md:w-1/3 flex justify-center">
+                  <div
+                     class="bg-amber-50 p-6 rounded-2xl border-2 border-dashed border-amber-300 text-center max-w-[240px] w-full"
+                  >
+                     <div
+                        class="bg-white p-4 rounded-xl shadow-md mb-3 flex justify-center"
+                     >
+                        <svg
+                           class="w-36 h-36 text-slate-800"
+                           viewBox="0 0 100 100"
+                           fill="currentColor"
+                        >
+                           <path
+                              d="M0 0h30v30H0zM10 10h10v10H10zM70 0h30v30H70zM80 10h10v10H80zM0 70h30v30H0zM10 80h10v10H10z"
+                           />
+                           <path
+                              d="M35 5h10v10H35zM50 5h15v5H50zM35 20h20v10H35zM55 35h10v20H55zM10 35h15v10H10zM35 70h10v15H35zM70 50h10v10H70zM85 50h15v15H85zM70 70h20v10H70zM50 80h15v20H50zM80 85h10v15H80z"
+                           />
+                        </svg>
+                     </div>
+                     <span class="text-xs font-bold text-brand-darkred block"
+                        >QUÉT MÃ TRUY CẬP TRÊN DI ĐỘNG</span
+                     >
+                  </div>
+               </div>
+
+               <div class="w-full md:w-2/3 space-y-4">
+                  <span
+                     class="text-brand-red font-bold text-sm tracking-widest uppercase bg-red-100 px-3 py-1 rounded-full"
+                     >TIỆN ÍCH SỐ</span
+                  >
+                  <h3 class="text-2xl font-bold text-slate-900">
+                     Mang Không Gian Văn Hóa Vào Điệp Thoại Của Bạn
+                  </h3>
+                  <p class="text-slate-600 text-sm leading-relaxed">
+                     Người dân và cán bộ y tế khi đến khám tại Trạm Y tế Phường
+                     Tân Thới Hiệp có thể quét mã QR code này để truy cập trực
+                     tiếp vào hệ thống tư liệu số, đọc tác phẩm của Bác Hồ và
+                     theo dõi các tin tức y tế mới nhất ngay trên điện thoại
+                     thông minh.
+                  </p>
+
+                  <div class="pt-2 flex flex-wrap gap-3">
+                     <button
+                        onclick="window.print()"
+                        class="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-xl transition-all flex items-center gap-2"
+                     >
+                        <i class="fa-solid fa-print"></i> In mã QR cho Trạm
+                     </button>
+                     <button
+                        onclick="
+                           navigator.clipboard
+                              ? navigator.clipboard.writeText(
+                                   window.location.href,
+                                )
+                              : true;
+                           alert('Đã sao chép liên kết không gian số!');
+                        "
+                        class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"
+                     >
+                        <i class="fa-solid fa-share-nodes"></i> Chia sẻ đường
+                        dẫn
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+      </main>
+
+      <!-- Footer -->
+      <footer
+         class="bg-slate-900 text-slate-400 text-xs sm:text-sm border-t border-slate-800 mt-16"
+      >
+         <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+               <!-- Col 1 -->
+               <div>
+                  <h4
+                     class="text-white font-bold text-base mb-3 flex items-center gap-2"
+                  >
+                     <i class="fa-solid fa-hospital text-brand-red"></i> TRẠM Y
+                     TẾ PHƯỜNG TÂN THỚI HIỆP
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed mb-3">
+                     Chăm sóc sức khỏe ban đầu cho nhân dân Phường Tân Thới
+                     Hiệp. Quyết tâm học tập và làm theo tư tưởng, đạo đức,
+                     phong cách Hồ Chí Minh.
+                  </p>
+               </div>
+
+               <!-- Col 2 -->
+               <div>
+                  <h4 class="text-white font-bold text-base mb-3">
+                     THÔNG TIN LIÊN HỆ
+                  </h4>
+                  <ul class="space-y-2 text-xs">
+                     <li class="flex items-start gap-2">
+                        <i
+                           class="fa-solid fa-location-dot text-brand-gold mt-0.5"
+                        ></i>
+                        <span
+                           >Địa chỉ: Số 495 đường Dương Thị Mười, Phường Tân
+                           Thới Hiệp, TP.HCM</span
+                        >
+                     </li>
+                     <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-brand-gold"></i>
+                        <span>Điện thoại: 02822000858</span>
+                     </li>
+                     <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-brand-gold"></i>
+                        <span>Giờ làm việc: Thứ 2 - Thứ 6 (7:30 - 17:00)</span>
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- Col 3 -->
+               <div>
+                  <h4 class="text-white font-bold text-base mb-3">
+                     KHÔNG GIAN VĂN HÓA SỐ
+                  </h4>
+                  <p class="text-xs text-slate-400 mb-3">
+                     Mô hình công trình chuyển đổi số hưởng ứng phong trào xây
+                     dựng Không gian Văn hóa Hồ Chí Minh trên toàn địa bàn Thành
+                     phố.
+                  </p>
+                  <div class="text-amber-400 text-xs font-semibold">
+                     <i class="fa-solid fa-circle-check mr-1"></i> Đã số hóa và
+                     cập nhật 2026
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="pt-6 border-t border-slate-800 text-center text-xs text-slate-500"
+            >
+               <p>
+                  © 2026 Trạm Y Tế Phường Tân Thới Hiệp. Bản quyền thuộc về Đơn
+                  vị Y tế Cơ sở.
+               </p>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
